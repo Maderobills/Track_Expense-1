@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mAuth = FirebaseAuth.getInstance();
+
+        gSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+        });
+
     }
 
     // [START onactivityresult]
@@ -110,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
 
-        if (user!=null)
+        if (user!=null){
         startActivity(new Intent(this,Dashboard.class));
     }
+}
 }
