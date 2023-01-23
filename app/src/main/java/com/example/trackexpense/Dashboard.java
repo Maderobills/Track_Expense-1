@@ -95,11 +95,11 @@ public class Dashboard extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mAount = amount.getText().toString();
+                String mAmount = amount.getText().toString();
                 String mNotes = notes.getText().toString();
                 String item = expeneSpinner.getSelectedItem().toString();
 
-                if (mAount.isEmpty()){
+                if (mAmount.isEmpty()){
                     amount.setError("Amount required!");
                     return;
                 }
@@ -122,7 +122,7 @@ public class Dashboard extends AppCompatActivity {
                     Calendar cal = Calendar.getInstance();
                     String date = dateFormat.format(cal.getTime());
 
-                    Data data = new Data(item, date, id, mNotes, Integer.parseInt(mAount));
+                    Data data = new Data(item, date, id, mNotes, Integer.parseInt(mAmount));
                     ref.child(id).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
