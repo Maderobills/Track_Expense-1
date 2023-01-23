@@ -5,6 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_startp"
+    android:orientation="vertical"
     tools:context=".Dashboard">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="4dp" />
+        
+        <TextView
+            android:id="@+id/totalSpent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Record: $0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#F2CB2E"
+            android:background="#000000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+        
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recView"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:backgroundTint="#FFF"
+                android:src="@drawable/addbtn"
+                app:fabSize="normal"/>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

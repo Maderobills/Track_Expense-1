@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Track Expense</string>
 
+    <string-array name="expenses">
+        <item>select item</item>
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Entertainment</item>
+        <item>other</item>
+
+
+    </string-array>
+
 </resources>
