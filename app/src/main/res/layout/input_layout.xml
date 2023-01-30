@@ -5,6 +5,7 @@
     android:elevation="10dp"
     app:cardElevation="10dp"
     android:orientation="vertical"
+    android:backgroundTint="#40000000"
     android:layout_height="match_parent">
 
 
@@ -18,12 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="#F2CB2E"
             android:gravity="center">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="what did you spend on"
+                android:text="ADD EXPENSE"
                 android:gravity="center"
                 android:textColor="#000"
                 android:textStyle="bold"
@@ -35,7 +37,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#FFFFFF">
 
             <Spinner
                 android:layout_width="match_parent"
@@ -66,7 +69,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#F2CB2E">
             
             <RelativeLayout
                 android:layout_width="0dp"
@@ -79,8 +83,9 @@
                     android:id="@+id/cancel"
                     android:text="cancel"
                     android:textAllCaps="false"
-                    android:textColor="#000"
+                    android:textColor="#FFF"
                     android:textStyle="bold"
+                    android:backgroundTint="#34000000"
                     android:layout_margin="2dp"/>
 
 
@@ -98,8 +103,10 @@
                     android:id="@+id/save"
                     android:text="save"
                     android:textAllCaps="false"
-                    android:textColor="#000"
+                    android:textColor="#F2CB2E"
                     android:textStyle="bold"
+                    android:backgroundTint="@color/white"
+                    android:textSize="18sp"
                     android:layout_margin="2dp"/>
 
 
