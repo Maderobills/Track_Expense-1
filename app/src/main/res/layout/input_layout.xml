@@ -5,7 +5,8 @@
     android:elevation="10dp"
     app:cardElevation="10dp"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="#F2cb2E">
 
 
     <LinearLayout
@@ -23,19 +24,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="what did you spend on"
+                android:text="ADD EXPENSE DETAILS"
                 android:gravity="center"
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_margin="5dp"
-                android:textSize="18dp"/>
+                android:textSize="18dp"
+                android:background="#F2CB2E"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#FFF">
 
             <Spinner
                 android:layout_width="match_parent"
@@ -79,9 +82,11 @@
                     android:id="@+id/cancel"
                     android:text="cancel"
                     android:textAllCaps="false"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:layout_margin="2dp"/>
+                    android:textColor="#FFF"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp"
+                    android:backgroundTint="#000"/>
 
 
 
@@ -98,8 +103,10 @@
                     android:id="@+id/save"
                     android:text="save"
                     android:textAllCaps="false"
-                    android:textColor="#000"
+                    android:textColor="#F2CB2E"
                     android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:backgroundTint="#FFF"
                     android:layout_margin="2dp"/>
 
 
